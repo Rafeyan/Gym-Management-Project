@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Management System - Home</title>
+    <link rel="stylesheet" href="./static/css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Gym Management System</h1>
+            <nav>
+                <ul>
+                    <li><a href="{{ url_for('home') }}">Home</a></li>
+                    <li><a href="{{ url_for('about') }}">About Us</a></li>
+                    <li><a href="{{ url_for('membership') }}">Membership</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Get Fit with Us!</h2>
+            <p>Your fitness journey starts here. Join us for professional training and state-of-the-art equipment.</p>
+            <a href="{{ url_for('membership') }}" class="cta-button">Join Now</a>
+        </div>
+    </section>
+
+    <section class="services">
+        <div class="container services-layout">
+            <div class="services-text">
+                <h2>Our Services</h2>
+                <p>
+                    We offer a wide range of services to cater to your fitness needs. From personal training to 
+                    nutrition guidance, we ensure you achieve your health and wellness goals effectively.
+                </p>
+            </div>
+            <div class="services-cards">
+                <div class="service">
+                    <h3>Personal Training</h3>
+                    <p>One-on-one sessions with certified trainers to achieve your fitness goals faster.</p>
+                </div>
+                <div class="service">
+                    <h3>Group Classes</h3>
+                    <p>Join our fun and engaging group fitness classes to stay motivated and fit.</p>
+                </div>
+                <div class="service">
+                    <h3>Nutrition Advice</h3>
+                    <p>Get personalized diet plans to complement your fitness routine and achieve better results.</p>
+                </div>
+                <div class="service">
+                    <h3>Quality Equipment</h3>
+                    <p>Access modern equipment designed for a comprehensive workout experience.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Gym Management System. Developed By Rafeyan Siddique</p>
+        </div>
+    </footer>
+</body>
+</html>

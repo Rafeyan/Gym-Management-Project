@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Gym Management System</title>
+    <link rel="stylesheet" href="./static/css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Gym Management System</h1>
+            <nav>
+                <ul>
+                    <li><a href="{{ url_for('home') }}">Home</a></li>
+                    <li><a href="{{ url_for('about') }}">About Us</a></li>
+                    <li><a href="{{ url_for('membership') }}">Membership</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="about-page">
+        <div class="container">
+            <!-- About Intro -->
+            <div class="about-intro row">
+                <div class="text">
+                    <h2>About Us</h2>
+                    <p>
+                        Welcome to our gym, where fitness meets community. We are dedicated to empowering individuals 
+                        to achieve their health and wellness goals through professional guidance, state-of-the-art facilities, 
+                        and a supportive environment.
+                    </p>
+                </div>
+                <div class="image">
+                    <img src="./static/images/1.webp" alt="About Us">
+                </div>
+            </div>
+
+            <!-- Mission Section -->
+            <div class="mission row">
+                <div class="text">
+                    <h2>Our Mission</h2>
+                    <p>
+                        Our mission is to inspire healthier lifestyles by providing access to innovative fitness solutions. 
+                        We believe in fostering a space where everyone, regardless of their fitness level, can thrive.
+                    </p>
+                </div>
+                <div class="image">
+                    <img src="./static/images/2.webp" alt="Our Mission">
+                </div>
+            </div>
+
+            <!-- Facilities Section -->
+            <div class="facilities row">
+                <div class="text">
+                    <h2>Our Facilities</h2>
+                    <p>
+                        Explore our world-class facilities, including state-of-the-art equipment, spacious studios, and a 
+                        comfortable lounge area. Our gym is designed to provide you with an exceptional fitness experience.
+                    </p>
+                </div>
+                <div class="image">
+                    <img src="./static/images/3.webp" alt="Facilities">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Gym Management System. Developed By Rafeyan Siddique</p>
+        </div>
+    </footer>
+</body>
+</html>
